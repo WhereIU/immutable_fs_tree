@@ -1,4 +1,5 @@
 import { mkdir, mkfile } from '@hexlet/immutable-fs-trees';
+import * as util from 'util';
 
 const tree = mkdir(
   'nodejs-package',
@@ -28,4 +29,4 @@ const tree = mkdir(
   { hidden: true },
 );
 
-console.log(tree);
+console.log(util.inspect(tree, false, null, true /* enable colors */));
